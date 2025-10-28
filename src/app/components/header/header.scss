@@ -1,0 +1,30 @@
+.container {
+    height: 91px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container img {
+    width: 100px;
+    height: 34px;
+}
+
+.nav-img{
+    display: flex;
+    align-items: center;
+}
+
+.nav-context{
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-context a{
+    text-decoration: none;
+    color: white;
+}
