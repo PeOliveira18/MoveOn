@@ -1,4 +1,4 @@
-.services-container{
+.services-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,17 +8,21 @@
     padding-top: 40px;
 }
 
-.title{
+.title {
     width: 100%;
-    padding: 20px 0px 0px 200px;
+    max-width: 1086px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title h2 {
     font-size: 28px;
 }
 
-.services{
+.services {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 20px;
-    align-items: center;
+    grid-template-columns: repeat(4, 249px);
     gap: 40px;
-    
+    margin-top: 20px;
 }

@@ -1,0 +1,42 @@
+.contato-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 402px;
+
+}
+
+img{
+    width: 540px;
+    height: 485px;
+    margin-bottom: 80px;
+}
+
+.contact-body h3{
+    font-size: 30px;
+    font-family: "Merriweather", serif;
+    color: white;
+}
+
+.contact-body h2{
+    color: #FFCB01;
+    font-size: 30px;
+    font-family: "Merriweather", serif;
+}
+
+.contact-body h4{
+    font-size: 18px;
+    font-family: "Rotunda Variable", sans-serif;
+    color: white;
+    font-weight: 400;
+}
+
+button{
+    padding: 14px 32px;
+    width: 184px;
+    height: 52px;
+    margin-top: 20px;
+    color: #084783;
+    border-radius: 4px;
+    border: none;
+}

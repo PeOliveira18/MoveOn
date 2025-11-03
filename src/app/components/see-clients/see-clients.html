@@ -1,0 +1,11 @@
+<div class="client-container">
+    <div class="title text-yellow">
+        <h1>Confira nossos</h1>
+        <h1 class="strong">CLIENTES</h1>
+        <p class="text-principal">Clique no botao abaixo:</p>
+        <button>Clique Aqui</button>
+    </div>
+    <div class="client-description">
+        <app-client-card *ngFor="let card of getCards()" [text]="card.text" [image]="card.image"></app-client-card>
+    </div>
+</div>
