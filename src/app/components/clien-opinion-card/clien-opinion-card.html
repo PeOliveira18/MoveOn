@@ -1,7 +1,24 @@
 <div class="card-wrapper">
     <div class="fundo"></div>
     <div class="card-branco">
-        <img [src]="image" alt="Client image">
-        <p>{{ text }}</p>
+        <div class="people">
+            <div class="img-people">
+                <img [src]="image" alt="Client image">
+            </div>
+            <div class="text-people">
+                <p class="name text-yellow">{{ name }}</p>
+                <p class="subtitle text-principal">{{ subtitle }}</p>
+            </div>
+        </div>
+        <div class="text">
+            <p>{{ text }}</p>
+        </div>
+        <div class="stars">
+            <img src="assets/images/star.png" alt="">
+            <img src="assets/images/star.png" alt="">
+            <img src="assets/images/star.png" alt="">
+            <img src="assets/images/star.png" alt="">
+            <img src="assets/images/star.png" alt="">
+        </div>
     </div>
 </div>

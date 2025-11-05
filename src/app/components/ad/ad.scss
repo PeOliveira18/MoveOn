@@ -1,0 +1,57 @@
+.ad-container {
+  background-color: #F0B03E; /* cor bem próxima da imagem */
+  width: 100%;
+  padding: 40px 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.ad-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* alinha o topo */
+  width: 100%;
+  max-width: 1200px; /* centraliza conteúdo e limita largura */
+}
+
+.title {
+  color: white;
+  max-width: 450px;
+  line-height: 1.6;
+}
+
+.title-main {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.contacts {
+  display: flex;
+  gap: 50px; 
+}
+
+.details {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: white;
+  max-width: 250px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  
+}
+
+.icon2{
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+}
+
+.contact-title {
+  font-weight: 700;
+  margin-bottom: 4px;
+}

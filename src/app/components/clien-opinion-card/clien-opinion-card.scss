@@ -1,35 +1,79 @@
 .card-wrapper {
-    position: relative;
-    width: 282px;
-    height: 540px;
-    margin: 0;
+  position: relative;
+  width: 282px;
+  height: auto;
+
 }
 
-.card-branco{
-    width: 282px;
-    height: 540px;
-    background-color: #F9F9F9;
-    position: relative;
-    z-index: 2;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+.card-branco {
+  background-color: #F9F9F9;
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  gap: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
-.fundo{
-    position: absolute;
-    width: 273px;
-    height: 250px;
-    background-color: #084783;
-    opacity: 0.25;
-    top: 20px;
-    left: 15px;
-    z-index: 1;
-    transform: rotate(15deg);
-    transform-origin: center center;
-    border-radius: 5px;
+.fundo {
+  position: absolute;
+  width: 280px;
+  height: 240px;
+  background-color: #084783;
+  opacity: 0.25;
+  top: 20px;
+  left: 15px;
+  z-index: 1;
+  transform: rotate(15deg);
+  border-radius: 8px;
+}
+
+.people {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.img-people img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.text-people {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.text-people .name {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.text-people .subtitle {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.text {
+  font-size: 16px;
+  color: #595959;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.stars {
+  font-size: 20px;
+  letter-spacing: 4px;
+  align-self: center;
+  gap: 9px;
+  display: flex;
 }
