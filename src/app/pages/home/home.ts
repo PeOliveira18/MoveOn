@@ -6,12 +6,13 @@ import { SeeClients } from '../../components/see-clients/see-clients';
 import { Contato } from '../../components/contato/contato';
 import { ClientOpinion } from '../../components/client-opinion/client-opinion';
 import { Ad } from '../../components/ad/ad';
+import { Footer } from '../../components/footer/footer';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.html',
   styleUrl: './home.scss',
-  imports: [Header, Hero, Services, SeeClients, Contato, ClientOpinion, Ad],
+  imports: [Header, Hero, Services, SeeClients, Contato, ClientOpinion, Ad, Footer],
 })
 export class Home {
 
