@@ -1,18 +1,26 @@
 .client-container{
     display: flex;
+    flex-direction: row;
     gap: 90px;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     min-height: 469px;
     height: auto;
-    padding: 47px 20px;
-    flex-wrap: wrap;
+    max-width: 975px;
+    padding: 47px 64px 68px 64px;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
 }
+
 
 .title {
     flex: 1;
     min-width: 250px;
     max-width: 400px;
+    
 }
 
 .title h1{

@@ -1,44 +1,103 @@
-.container {
+/* Evita conflito com outras áreas do site */
+.header-container {
     height: 91px;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
+    padding: 20px 40px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-.container img {
+.header-container img {
     width: 100px;
     height: 34px;
 }
 
-.nav-img{
-    display: flex;
-    align-items: center;
-    margin-left: 100px;
+/* Botão do menu mobile */
+.menu-btn {
+    display: none;
+    background: none;
+    font-size: 32px;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-.nav-context{
+/* Área do logo */
+.nav-img {
     display: flex;
-    gap: 20px;
-    flex: 1;
-    justify-content: center;
     align-items: center;
 }
 
-.nav-context a{
+/* Nav desktop */
+.nav-context {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-context a {
     text-decoration: none;
 }
 
-.links{
+.links {
     text-decoration: none;
     color: white;
 }
 
-.btn-contact{
+.btn-contact {
     padding: 14px 32px;
     border-radius: 4px;
     border: none;
+    background: transparent;
+    cursor: pointer;
+    background-color: white;
+}
+
+.btn-contact a {
     color: #F9AF0E;
 }
 
+/* ----------------------------- */
+/* RESPONSIVIDADE */
+/* ----------------------------- */
 
+/* Tablet */
+@media (max-width: 900px) {
+    .header-container {
+        padding: 20px 25px;
+    }
+
+    .nav-context {
+        gap: 15px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-context {
+        position: absolute;
+        top: 91px;
+        right: 0;
+        background: #043F47;
+        width: 100%;
+        padding: 20px 0;
+        flex-direction: column;
+        gap: 20px;
+        display: none; /* começa escondido */
+    }
+
+    /* Quando adicionar classe "active" via TS */
+    .nav-context.active {
+        display: flex;
+    }
+
+    .btn-contact {
+        margin-top: 10px;
+    }
+}

@@ -5,8 +5,9 @@
     width: 249px;
     min-height: 243px;
     height: auto;
-    padding: 20px;
+    padding: 30px;
     max-width: 100%;
+    border-radius: 10px;
 }
 
 .title{
@@ -40,6 +41,7 @@ img{
 @media (max-width: 480px) {
     .card-container {
         padding: 15px;
+        min-height: auto;
     }
     
     .title {

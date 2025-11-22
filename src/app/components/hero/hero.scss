@@ -1,48 +1,22 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* ---------------- CONTAINER CENTRALIZADO ---------------- */
 
-html, body {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
     width: 100%;
-    font-family: "rotunda-variable", sans-serif;
-    font-variation-settings: 'wght' 400;
-}
-
-.bg-header {
-    background-color: #084783;
-}
-
-.text-yellow { 
-    color: #F9AF0E;
-}
-
-.text-gray {
-    color: #67747C;
-}
-
-.bg-hero {
-    background-color: #F9F9F9;
-}
-
-.text-principal {
-    color: #084783;
-}
-
-.text-black {
-    color: #212121;
+    padding: 0 20px;
 }
 
 /* ---------------- HERO ---------------- */
 
 .hero-container {
     width: 100%;
+
 }
 
 .hero-container img {
     width: 100%;
-    height: auto;            /* ← REMOVIDO height fixo */
+    height: auto;
     object-fit: cover;
     display: block;
 }
@@ -50,26 +24,18 @@ html, body {
 .text-hero-container {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 40px 0;
     box-sizing: border-box;
-    min-height: auto;        /* ← REMOVIDO o min-height gigante */
 }
 
 .hero-body {
-    padding-top: 44px;
     text-align: center;
-    max-width: 1060px;
-    width: calc(100% - 40px);
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 40px;
-    box-sizing: border-box;
+    padding: 20px 0;
 }
 
 .hero-body h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 32px;
+    margin-bottom: 25px;
     color: #084783;
 }
 
@@ -82,121 +48,71 @@ html, body {
 .paragraph {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-}
-
-/* ---------------- MEDIA QUERIES ---------------- */
-
-@media (max-width: 1280px) {
-    .hero-body {
-        max-width: calc(100% - 40px);
-        width: calc(100% - 40px);
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+    gap: 22px;
 }
 
 @media (max-width: 1024px) {
-    .hero-container img {
-        height: auto;
-    }
-    
-    .text-hero-container {
-        padding: 20px 15px;
-    }
-    
-    .hero-body {
-        padding-top: 35px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 35px;
-    }
-    
     .hero-body h1 {
-        font-size: 26px;
-        margin-bottom: 18px;
+        font-size: 28px;
     }
-    
+
     .hero-body h2 {
         font-size: 19px;
+    }
+
+    .paragraph {
+        gap: 18px;
     }
 }
 
 @media (max-width: 768px) {
-    .text-hero-container {
-        padding: 15px;
+    .container {
+        padding: 0 15px;
     }
-    
-    .hero-body {
-        padding-top: 30px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 30px;
-    }
-    
+
     .hero-body h1 {
-        font-size: 24px;
-        margin-bottom: 16px;
+        font-size: 26px;
     }
-    
+
     .hero-body h2 {
         font-size: 18px;
         line-height: 1.5;
     }
-    
+
     .paragraph {
         gap: 16px;
     }
 }
 
 @media (max-width: 480px) {
-    .text-hero-container {
-        padding: 12px;
+    .container {
+        padding: 0 12px;
     }
-    
-    .hero-body {
-        padding-top: 25px;
-        padding-left: 12px;
-        padding-right: 12px;
-        padding-bottom: 25px;
-    }
-    
+
     .hero-body h1 {
-        font-size: 20px;
-        margin-bottom: 14px;
+        font-size: 22px;
     }
-    
+
     .hero-body h2 {
         font-size: 16px;
-    }
-    
-    .paragraph {
-        gap: 14px;
     }
 }
 
 @media (max-width: 360px) {
-    .text-hero-container {
-        padding: 10px;
+    .container {
+        padding: 0 10px;
     }
-    
-    .hero-body {
-        padding-top: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 20px;
-    }
-    
+
     .hero-body h1 {
-        font-size: 18px;
-        margin-bottom: 12px;
+        font-size: 20px;
     }
-    
+
     .hero-body h2 {
         font-size: 14px;
     }
-    
-    .paragraph {
-        gap: 12px;
-    }
+}
+
+
+@media (max-with: 1300px){
+
 }
