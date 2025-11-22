@@ -12,12 +12,16 @@
   align-items: flex-start; /* alinha o topo */
   width: 100%;
   max-width: 1200px; /* centraliza conteúdo e limita largura */
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .title {
   color: white;
   max-width: 450px;
   line-height: 1.6;
+  flex: 1;
+  min-width: 250px;
 }
 
 .title-main {
@@ -28,7 +32,8 @@
 
 .contacts {
   display: flex;
-  gap: 50px; 
+  gap: 50px;
+  flex-wrap: wrap;
 }
 
 .details {
@@ -37,21 +42,95 @@
   gap: 12px;
   color: white;
   max-width: 250px;
+  flex: 1;
+  min-width: 200px;
 }
 
 .icon {
   width: 24px;
   height: 24px;
-  
+  flex-shrink: 0;
 }
 
 .icon2{
     width: 24px;
     height: 24px;
     opacity: 0.7;
+    flex-shrink: 0;
 }
 
 .contact-title {
   font-weight: 700;
   margin-bottom: 4px;
+}
+
+@media (max-width: 1024px) {
+  .ad-container {
+    padding: 40px 40px;
+  }
+  
+  .ad-body {
+    gap: 30px;
+  }
+  
+  .contacts {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ad-container {
+    padding: 30px 20px;
+  }
+  
+  .ad-body {
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .title {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .contacts {
+    width: 100%;
+    gap: 20px;
+    flex-direction: column;
+  }
+  
+  .details {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .title-main {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ad-container {
+    padding: 20px 15px;
+  }
+  
+  .ad-body {
+    gap: 20px;
+  }
+  
+  .title-main {
+    font-size: 16px;
+  }
+  
+  .contacts {
+    gap: 15px;
+  }
+  
+  .details {
+    font-size: 14px;
+  }
+  
+  .contact-title {
+    font-size: 14px;
+  }
 }

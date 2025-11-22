@@ -3,8 +3,16 @@
     gap: 90px;
     justify-content: center;
     align-items: center;
-    height: 469px;
-    padding-top: 47px;
+    min-height: 469px;
+    height: auto;
+    padding: 47px 20px;
+    flex-wrap: wrap;
+}
+
+.title {
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
 }
 
 .title h1{
@@ -25,6 +33,7 @@
     color: white;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .strong{
@@ -35,4 +44,69 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 48px;
+    flex: 1;
+    min-width: 300px;
+}
+
+@media (max-width: 1024px) {
+    .client-container {
+        gap: 50px;
+        padding: 40px 20px;
+    }
+    
+    .client-description {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .client-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 15px;
+        align-items: flex-start;
+    }
+    
+    .title {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .title h1 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    
+    .title p {
+        font-size: 18px;
+    }
+    
+    .client-description {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .client-container {
+        padding: 20px 10px;
+    }
+    
+    .title h1 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    
+    .title p {
+        font-size: 16px;
+    }
+    
+    .title button {
+        padding: 12px 24px;
+    }
+    
+    .client-description {
+        gap: 15px;
+    }
 }

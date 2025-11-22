@@ -1,8 +1,8 @@
 .card-wrapper {
   position: relative;
   width: 282px;
+  max-width: 100%;
   height: auto;
-
 }
 
 .card-branco {
@@ -76,4 +76,62 @@
   align-self: center;
   gap: 9px;
   display: flex;
+}
+
+@media (max-width: 768px) {
+  .card-wrapper {
+    width: 100%;
+  }
+  
+  .card-branco {
+    padding: 25px;
+  }
+  
+  .fundo {
+    width: calc(100% - 30px);
+    max-width: 280px;
+  }
+  
+  .text {
+    font-size: 15px;
+  }
+  
+  .text-people .subtitle {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-wrapper {
+    width: 100%;
+  }
+  
+  .card-branco {
+    padding: 20px;
+    gap: 15px;
+  }
+  
+  .fundo {
+    width: calc(100% - 40px);
+    height: 200px;
+    top: 15px;
+    left: 10px;
+  }
+  
+  .text {
+    font-size: 14px;
+  }
+  
+  .text-people .name {
+    font-size: 13px;
+  }
+  
+  .text-people .subtitle {
+    font-size: 14px;
+  }
+  
+  .stars {
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
 }
