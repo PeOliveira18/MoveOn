@@ -9,9 +9,9 @@ html, body {
     overflow-x: hidden;
     // height: 100%;
     // font-family: 'Montserrat', sans-serif;
-    // scroll-behavior: smooth; 
     font-family: "rotunda-variable",sans-serif;
     font-variation-settings: 'wght' 400;
+    scroll-behavior: smooth;
 }
 
 .bg-header {
@@ -27,7 +27,7 @@ html, body {
 }
 
 .bg-hero{
-    background-color: #F9F9F9;
+    background-color: #ececec;
 }
 
 .text-principal {
@@ -36,4 +36,12 @@ html, body {
 
 .text-black{
     color: #212121;
+}
+
+#inicio,
+#hero,
+#services,
+#clientes,
+#contato {
+    scroll-margin-top: 200px; 
 }

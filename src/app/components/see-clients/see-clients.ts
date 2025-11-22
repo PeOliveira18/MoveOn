@@ -21,4 +21,10 @@ export class SeeClients {
   ];
   }
 
+  scrollToClientes() {
+  const section = document.getElementById('clientes');
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 }

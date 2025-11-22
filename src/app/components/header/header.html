@@ -3,18 +3,20 @@
         <img src="assets/images/moveon.png" alt="Logo">
     </div>
 
-    <!-- Botão mobile -->
-    <button class="menu-btn">
+    <!-- Botão Mobile -->
+    <button class="menu-btn" (click)="toggleMenu()">
         ☰
     </button>
 
-    <nav class="nav-context">
-        <a href="" class="links">Sobre nós</a>
-        <a href="" class="links">Início</a>
-        <a href="" class="links">Nossas soluções</a>
-        <a href="" class="links">Nossos clientes</a>
-        <button class="btn-contact">
-            <a href="" class="text-yellow">Contatos</a>
+    <!-- Menu -->
+    <nav class="nav-context" [class.active]="menuMobile">
+        <a href="#inicio" class="links" (click)="closeMenu()">Início</a>
+        <a href="#hero" class="links" (click)="closeMenu()">Sobre nós</a>
+        <a href="#services" class="links" (click)="closeMenu()">Nossas soluções</a>
+        <a href="#clientes" class="links" (click)="closeMenu()">Nossos clientes</a>
+
+        <button class="btn-contact" (click)="closeMenu()">
+            <a href="#contato" class="text-yellow">Contatos</a>
         </button>
     </nav>
 </header>
